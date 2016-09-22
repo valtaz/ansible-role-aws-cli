@@ -30,3 +30,4 @@
     format: "{{ aws_cli_format }}"
   become_user: "{{ aws_cli_system_user }}"
   changed_when: false
+  when: aws_configure is defined
